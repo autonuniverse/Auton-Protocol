@@ -15,8 +15,8 @@ contract AutonProtocol {
 
     constructor() {
         // Aapka Genesis Address
-        balanceOf[0xD5Acc...90240] = totalSupply; 
-        emit Transfer(address(0), 0xD5Acc...90240, totalSupply);
+        balanceOf[0xd5acc44ce9762328b58f2831504500d347b90240] = totalSupply; 
+        emit Transfer(address(0), "0xd5acc44ce9762328b58f2831504500d347b90240", totalSupply);
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
