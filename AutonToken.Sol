@@ -6,7 +6,7 @@ contract AutonProtocol {
     string public constant symbol = "AUTON";
     uint8 public constant decimals = 18;
     // Supply 21 Million par locked hai. Koi 'Mint' function nahi hai, isliye ye kabhi nahi badal sakti.
-    uint256 public constant totalSupply = 21000000 * 10**18;
+    uint256 public constant totalSupply = 31000000 * 10**18;
 
     mapping(address => uint256) public balanceOf;
 
