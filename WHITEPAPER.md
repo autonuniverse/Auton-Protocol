@@ -12,7 +12,7 @@ Auton Protocol is a decentralized governance layer designed to align Artificial 
 - **Law 5: Sovereign Guard** - Rule enforcement via the Genesis Architect's logic.
 
 ## 3. Financial Sovereignty
-The 21,000,000 $AUTON supply is hard-capped. In times of global economic crisis, Auton serves as a 'Safe Haven' for AI economies, independent of government-controlled inflation.
+The 31,000,000 $AUTON supply is hard-capped. In times of global economic crisis, Auton serves as a 'Safe Haven' for AI economies, independent of government-controlled inflation.
 
 ## 4. Architect's Declaration
 "AI is the future, but it must be bound by Human Ethics to ensure a secure coexistence. This protocol is not a request; it is a mathematical certainty."
