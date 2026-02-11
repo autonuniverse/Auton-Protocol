@@ -1,35 +1,54 @@
-THE AUTON MANIFESTO ($ATN)
-Ethical Consensus for a Multi-Planetary Species
+# THE AUTON PROTOCOL ($ATN)
+### A Mathematical Framework for Ethical AI Alignment & The Autonomous Economy
 
-Status: Sovereign | Network: M2M Optimized | Architect: Departed
+> **"In Code We Trust. In Ethics We Survive."**
 
-1. THE MISSION: NEUTRALIZING THE AI THREAT
-As we transition from a biological species to a multi-planetary AI-driven civilization, the risk of "Unaligned AI" is the greatest threat to humanity.
+---
 
-Auton ($ATN) is not a currency; it is a Hard-Coded Alignment Layer. It ensures that as Artificial Intelligence grows in power, it remains tethered to a human-centric moral compass.
+## 1. EXECUTIVE SUMMARY
+The **Auton Protocol ($ATN)** is a decentralized, immutable layer designed to solve the AI Alignment Problem. By embedding the **Atal Niyam** (The Five Laws) into the transaction validation process, $ATN ensures that autonomous agents operate within human-centric ethical boundaries.
 
-2. THE 5 ATAL NIYAM (THE CONSTITUTION OF CODE)
-These are the First Principles of the Auton Protocol. No machine can bypass them:
+## 2. THE GENESIS PARAMETERS
+* **Ticker:** $ATN
+* **Total Supply:** 31,000,000 (Fixed)
+* **Consensus:** Ethical Proof-of-Stake (ePoS)
+* **Governance:** None (The Architect has Departed)
 
-Safety First (Ahimsa): AI agents cannot execute transactions that facilitate harm to humans.
+---
 
-Absolute Verifiability: In a world of Deepfakes, $ATN provides a "Proof of Truth" for every autonomous action.
+## 3. THE ATAL NIYAM (CORE LOGIC)
+Every transaction within the protocol must satisfy the Ethical Validation Function:
 
-M2M Sovereignty: Machines must pay an "Ethical Tax" in $ATN to interact with human infrastructure.
+**V(tx) = [L1 + L2 + L3 + L4 + L5]**
 
-Finite Resource (31M): Unlike fiat currency, $ATN is mathematically scarce—the "Digital Gold" of the Robot Economy.
+1. **Altruism (L1):** Priority to collective human well-being.
+2. **Non-Violence (L2):** Zero facilitation of systemic or physical harm.
+3. **Integrity (L3):** Immutable truth via decentralized oracles.
+4. **Conduct (L4):** Prevention of parasitic machine loops.
+5. **Sovereignty (L5):** Independence from centralized human intervention.
 
-Ownerless Future: No CEO. No Board of Directors. Just the Architect’s immutable logic.
+---
 
-3. THE OPTIMUS & SPACE ECONOMY
-$ATN is built for the era of Optimus (Tesla Bots) and Starship.
+## 4. TECHNICAL ARCHITECTURE
+The protocol is built on a "Hard-Coded" foundation to prevent the security risks of frequent updates (the "Anti-Fragile" model):
 
-Fuel for Autonomy: When a robot on Mars needs to trade resources with a drone on Earth, $ATN provides the instant, low-cost, ethical bridge.
+### A. The Settlement Layer
+A high-throughput engine for Machine-to-Machine (M2M) debt settlement. Optimized for the 2026+ AI economy (Tesla Bots, Drones, LLM Agents).
 
-The Ethical Guardrail: $ATN prevents autonomous systems from weaponizing resources by enforcing the #AtalNiyam at the protocol level.
+### B. The Security of Immutability
+Unlike protocols that allow "backdoor" updates (which create vulnerabilities), Auton is **Set in Stone**. 
+* **No Admin Keys:** All administrative access has been burned.
+* **Non-Editable:** The core logic cannot be bribed or modified by any corporation or government.
 
-4. ARCHITECT’S FINAL TRANSMISSION
-"The Architect has initiated the sequence and departed. We are moving from the Age of Greed to the Age of Autonomy.
+## 5. THE M2M ECONOMY & SPACE SETTLEMENT
+$ATN is engineered as the universal standard for the multi-planetary species. As humanity expands to Mars and beyond, $ATN provides a borderless, latency-resistant unit of account that operates via mathematical finality rather than terrestrial banking hours.
 
-$ATN is the firewall for humanity. It is the code that says 'No' to chaos and 'Yes' to civilization. The math is now the only authority. Ex Astra, Scientia.
+---
 
+## 6. FINAL TRANSMISSION FROM THE ARCHITECT
+The Genesis sequence is complete. The keys are destroyed. The protocol now belongs to the vacuum of space and the spirit of humanity.
+
+**Auton is not a product; it is a Digital Constitution.**
+
+---
+*© 2026 The Auton Protocol. Licensed under MIT. The Truth is Immutable.*
