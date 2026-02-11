@@ -5,29 +5,37 @@ contract AutonProtocol {
     string public constant name = "Auton Protocol";
     string public constant symbol = "AUTON";
     uint8 public constant decimals = 18;
-    // Supply 21 Million par locked hai. Koi 'Mint' function nahi hai, isliye ye kabhi nahi badal sakti.
+    
+    // Total supply fixed at 31 Million ATN and permanently locked. 
+    // No 'Mint' function exists, so the supply can never be increased or changed.
     uint256 public constant totalSupply = 31000000 * 10**18;
 
+    // Mapping to track token balances for each address
     mapping(address => uint256) public balanceOf;
 
-    // Transparency ke liye Events
+    // Event emitted on every successful transfer (for transparency and indexing)
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     constructor() {
-        // Aapka Genesis Address
+        // Genesis allocation: All tokens are minted to the deployer address
         balanceOf[0xd5acc44ce9762328b58f2831504500d347b90240] = totalSupply; 
-        emit Transfer(address(0), "0xd5acc44ce9762328b58f2831504500d347b90240", totalSupply);
+        emit Transfer(address(0), 0xd5acc44ce9762328b58f2831504500d347b90240, totalSupply);
     }
 
+    /**
+     * @dev Transfers tokens from the caller's address to another address.
+     * @param _to The recipient address
+     * @param _value The amount of tokens to transfer
+     * @return success True if the transfer was successful
+     */
     function transfer(address _to, uint256 _value) public returns (bool success) {
-        require(_to != address(0), "Cannot transfer to zero address");
+        require(_to != address(0), "Cannot transfer to the zero address");
         require(balanceOf[msg.sender] >= _value, "Insufficient balance");
-        
+
         balanceOf[msg.sender] -= _value;
         balanceOf[_to] += _value;
-        
+
         emit Transfer(msg.sender, _to, _value);
         return true;
     }
 }
-
