@@ -21,5 +21,8 @@ The Genesis Manifesto
 ​I have fulfilled my duty. The liquidity has been provided to the ecosystem via PancakeSwap. The code is live, the rules are set, and the gate is closed. From this moment forward, the Auton Network is governed only by its code and its community.
 
 ​The future is autonomous. The future is ethical.
-
+Current Live Contract: 0x41bd4835db176361953a69f2bc63f7b293b3b838 (BscScan: [link])
+Token is live with basic transfer functionality.
+Updated source code on GitHub includes full ERC-20 (approve/transferFrom/allowance) + burn for future enhancements.
+No immediate migration needed – Atal Niyam remains immutable and ownerless.
 
