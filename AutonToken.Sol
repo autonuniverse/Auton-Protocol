@@ -8,34 +8,86 @@ contract AutonProtocol {
     
     // Total supply fixed at 31 Million ATN and permanently locked. 
     // No 'Mint' function exists, so the supply can never be increased or changed.
-    uint256 public constant totalSupply = 31000000 * 10**18;
+    uint256 public immutable totalSupply = 31000000 * 10**18;
 
     // Mapping to track token balances for each address
     mapping(address => uint256) public balanceOf;
+    
+    // Mapping to track allowances (owner -> spender -> amount)
+    mapping(address => mapping(address => uint256)) public allowance;
 
-    // Event emitted on every successful transfer (for transparency and indexing)
+    // Events for transparency, indexing, and wallet/exchange compatibility
     event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 
     constructor() {
-        // Genesis allocation: All tokens are minted to the deployer address
+        // Genesis allocation: All tokens minted to the deployer address at launch
         balanceOf[0xd5acc44ce9762328b58f2831504500d347b90240] = totalSupply; 
         emit Transfer(address(0), 0xd5acc44ce9762328b58f2831504500d347b90240, totalSupply);
     }
 
     /**
      * @dev Transfers tokens from the caller's address to another address.
-     * @param _to The recipient address
-     * @param _value The amount of tokens to transfer
+     * @param to Recipient address
+     * @param value Amount of tokens to transfer
      * @return success True if the transfer was successful
      */
-    function transfer(address _to, uint256 _value) public returns (bool success) {
-        require(_to != address(0), "Cannot transfer to the zero address");
-        require(balanceOf[msg.sender] >= _value, "Insufficient balance");
+    function transfer(address to, uint256 value) public returns (bool success) {
+        require(to != address(0), "Cannot transfer to the zero address");
+        require(balanceOf[msg.sender] >= value, "Insufficient balance");
 
-        balanceOf[msg.sender] -= _value;
-        balanceOf[_to] += _value;
+        balanceOf[msg.sender] -= value;
+        balanceOf[to] += value;
 
-        emit Transfer(msg.sender, _to, _value);
+        emit Transfer(msg.sender, to, value);
         return true;
+    }
+
+    /**
+     * @dev Approves a spender to transfer tokens on behalf of the caller.
+     * @param spender Address authorized to spend tokens
+     * @param value Amount of tokens approved for spending
+     * @return success True if the approval was successful
+     */
+    function approve(address spender, uint256 value) public returns (bool success) {
+        allowance[msg.sender][spender] = value;
+        emit Approval(msg.sender, spender, value);
+        return true;
+    }
+
+    /**
+     * @dev Transfers tokens from one address to another (used by approved spenders, e.g., DEX routers).
+     * @param from Address to transfer from
+     * @param to Recipient address
+     * @param value Amount of tokens to transfer
+     * @return success True if the transfer was successful
+     */
+    function transferFrom(address from, address to, uint256 value) public returns (bool success) {
+        require(to != address(0), "Cannot transfer to the zero address");
+        require(balanceOf[from] >= value, "Insufficient balance");
+        require(allowance[from][msg.sender] >= value, "Insufficient allowance");
+
+        balanceOf[from] -= value;
+        balanceOf[to] += value;
+
+        // Decrease the allowance
+        allowance[from][msg.sender] -= value;
+
+        emit Transfer(from, to, value);
+        return true;
+    }
+
+    /**
+     * @dev Burns (permanently removes) tokens from the caller's balance.
+     * Useful for deflationary mechanics (e.g., burn fees from M2M transactions).
+     * @param amount Amount of tokens to burn
+     */
+    function burn(uint256 amount) public {
+        require(balanceOf[msg.sender] >= amount, "Insufficient balance to burn");
+        
+        balanceOf[msg.sender] -= amount;
+        // totalSupply -= amount;  // Uncomment if you want totalSupply to decrease on-chain (recommended)
+        
+        emit Transfer(msg.sender, address(0), amount);
     }
 }
