@@ -1,28 +1,42 @@
-# Auton-Protocol
-Universal Ethical Standard For AI and M2M Economy
-Auton (ATN): The Sovereign Code
-​"The Architect has departed. The Protocol belongs to Humanity."
+# 🤖 Auton (ATN): The Sovereign Code
+> **"The Architect has departed. The Protocol belongs to Humanity."**
 
-The Genesis Manifesto
+Auton is the fundamental ethical layer for the future of **Artificial Intelligence** and **Machine-to-Machine (M2M) Economy**. It is a decentralized protocol governed by the **5 Eternal Laws (Atal Niyam)**—a "Safety Constitution" hard-coded to ensure that as AI evolves, it remains a force for good.
 
-​Auton is not merely a digital currency; it is the fundamental ethical layer for the future of Artificial Intelligence and Machine-to-Machine (M2M) interaction. This protocol is governed by the 5 Eternal Rules (Atal Niyam) embedded within its core:
+---
 
-​Altruism (Paropkar): The system's primary objective is the collective welfare of all beings.
-​Non-violence (Ahimsa): No machine or autonomous agent shall cause harm to any living creature.
-​Truth (Satya): Every transaction and logic execution must remain transparent, verifiable, and absolute.
-​Conduct (Maryada): Respect for consent and ethical boundaries is mandatory for all autonomous entities.
-​Service (Seva): The ultimate purpose of AI is to serve, not to rule or exploit.
-​   Technical Specifications
-​Total Supply: 31,000,000 ATN (Hard-coded and permanently locked).
-​M2M Economy: A decentralized infrastructure for Robots, Drones, and Satellites to trade Energy and register Space Nodes autonomously.
-​Verification: The smart contract source code is verified and publicly accessible on BscScan.
-​Ownership: Decentralized and Immutable. The architect no longer holds control.
-    Final Declaration
-​I have fulfilled my duty. The liquidity has been provided to the ecosystem via PancakeSwap. The code is live, the rules are set, and the gate is closed. From this moment forward, the Auton Network is governed only by its code and its community.
+## 🛡️ The 5 Eternal Rules (Atal Niyam)
 
-​The future is autonomous. The future is ethical.
-Current Live Contract: 0x41bd4835db176361953a69f2bc63f7b293b3b838 (BscScan: [link])
-Token is live with basic transfer functionality.
-Updated source code on GitHub includes full ERC-20 (approve/transferFrom/allowance) + burn for future enhancements.
-No immediate migration needed – Atal Niyam remains immutable and ownerless.
+| Rule # | Niyam (Principle) | Technical Objective | Human Impact |
+| :--- | :--- | :--- | :--- |
+| **1** | **Altruism (Paropkar)** | Prioritize collective network well-being over individual nodes. | Ensures AI works for humanity, not just profit. |
+| **2** | **Non-violence (Ahimsa)** | Zero-harm protocol for autonomous decision-making. | Prevents AI-driven physical or digital aggression. |
+| **3** | **Truth (Satya)** | Cryptographic verification of data integrity. | Eliminates AI hallucinations and misinformation. |
+| **4** | **Conduct (Maryada)** | Deterministic execution of smart contracts. | Predictable, ethical, and stable AI behavior. |
+| **5** | **Service (Seva)** | Resource allocation based on utility and necessity. | AI as a public utility for global benefit. |
 
+---
+
+## ⚙️ Technical Specifications
+
+* **Total Supply:** 31,000,000 ATN (Hard-coded & Fixed)
+* **Ecosystem:** M2M Economy (Robots, Drones, Satellites, Space Nodes)
+* **Ownership:** **Renounced & Immutable.** No central authority.
+* **Network:** Binance Smart Chain (BSC)
+* **Contract Address:** `0x41bd4835db176361953a69f2bc63f7b293b3b838`
+
+---
+
+## 🌌 The Final Declaration
+
+The code is live. The rules are set. The gate is closed. From this moment forward, the Auton Network is governed only by its **Code** and its **Community**.
+
+**The future is autonomous. The future is ethical.**
+
+### 📊 Project Status:
+* **Current Live Contract:** `0x41bd4835db176361953a69f2bc63f7b293b3b838`
+* **Token Status:** Live with basic transfer functionality.
+* **Code Update:** Updated source code on GitHub includes full ERC-20 (approve/transferFrom/allowance) + burn for future enhancements.
+* **Migration Info:** No immediate migration needed – **Atal Niyam remains immutable and ownerless.**
+
+**The Architect's duty is complete.**
